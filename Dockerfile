@@ -14,8 +14,8 @@ ENV HOME /usr/src/app
 
 WORKDIR /usr/src/app
 
-RUN chgrp -R 0 /usr/src/app && \
-    chmod -R g=u /usr/src/app
+#RUN chgrp -R 0 /usr/src/app && \
+#    chmod -R g=u /usr/src/app
 
 RUN wget $TRIFECTA_URL/v$TRIFECTA_VERSION/trifecta_ui-$TRIFECTA_VERSION.zip && \
 	unzip trifecta_ui-$TRIFECTA_VERSION.zip  && \
